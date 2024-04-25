@@ -1,0 +1,257 @@
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.QSN .img{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 500px;
+  height: 700px;
+  text-align: center;
+  animation-duration: 10s;
+animation-name: mesImages;
+animation-iteration-count: infinite ease;
+}
+@keyframes mesImages {
+  0%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(-500px);
+  }
+    100%{
+      transform: translateX(0);
+    }
+  }
+/*fin de QSN*/
+
+
+
+
+
+ /*Debut de history*/
+ img.alignleft{
+  margin: 0 15px 0 0;
+  float: left;
+}
+img.alignRight{
+  margin: 0 0 0 15px;
+  float: right;
+  padding: 15px;
+}
+
+p.alignleft{
+  text-align: left;
+
+}
+p.alignRight{
+  text-align: right;
+}
+/*fin de history*/
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class="pagination">
+    <button class="btn1" oneclick="backBtn()"> image fleche pre</button>
+    <ul>
+      <li class="link active" value="1" onclick="activelink()">1</li>
+      <li class="link" value="2"onclick="activelink()">2</li>
+      <li class="link" value="3"onclick="activelink()">3</li>
+      <li class="link" value="4"onclick="activelink()">4</li>
+      <li class="link" value="5"onclick="activelink()">5</li>
+      <li class="link" value="6"onclick="activelink()">6</li>
+    </ul>
+    <button class="btn2" oneclick="nextBtn()"> ima flesui</button>
+  </div>
+</div>
+
+
+<script>
+  let link = document.getElementsByClassName("link");
+
+  let currentValue = 1;
+
+  function activelink(){
+    for(1 of link){
+        1.
+        classList.remove("active");
+    }
+    event.target.classList.add("active");
+    currentValue = event.target.value;
+  }
+  []
+  function backBtn(){
+    if(currentValue > 1){
+      for(1 of link){
+        1.
+        classList.remove("active");
+        } 
+        currentValue--;
+        link[currentValue-1].classList.add("active");
+    } 
+  }
+  function nextBtn(){
+    if(currentValue < 6){
+      for(1 of link){
+        1.
+        classList.remove("active");
+        } 
+        currentValue++;
+        link[currentValue-1].classList.add("active");
+    }
+  }
+</script>
+
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #410358,#4700bc);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.pagination{
+  display:flex;
+  align-items:center;
+  background:#fff;
+  color:#383838;
+  padding:10px 40px;
+  border-radius:6px;
+
+}
+ul{
+  margin:20px 30px;
+
+}
+ul li{
+  display: inline-block;
+  margin:0 10px;
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  text-align:center;
+  font-size:22px;
+  font-weight:500;
+  line-height: 45px;
+  cursor:pointer;
+  background-position: 0 -45px;
+  transition: background-position  0.5s;
+}
+.ul li.active{
+  color:#fff;
+  background-image: linear-gradient(#ff4568, #ff4568);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.btn1, btn2{
+  display:inline-flex;
+  align-items:center;
+  font-size:22px;
+  font-weight:500;
+  color:#383838;
+  outline:none;
+  border:none;
+  cursor:pointer; 
+}
+
+
+
+
+
+  
+
+
+
+
+
+
+
+section .image{
+    display: flex;
+    flex-direction: row;
+    animation-duration: 10s;
+    animation-name: mesImages;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes mesImages {
+    0%{
+      transform: translateX(0);
+    }
+    50%{
+      transform: translateX(-500px);
+    }
+      100%{
+        transform: translateX(0);
+      }
+  }
+
+
+
+  .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+  }
+  .btn:hover{
+    background: var(--yellow);
+    letter-spacing: .1rem;
+  }

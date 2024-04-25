@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root{
+   
+  --yellow:#ffd234;
+  --black:#ff2f00;
+  --light-color:#000;
+  --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+} 
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+html{
+   font-family: 'nunito',Verdana; 
+  
+ }
+ 
+
+
+
+ /*debut du header*/
+
+ header{
+  top: 0;left: 0;right: 0;
+  padding: 1rem 3%;
+  background-color:black;
+  position: fixed;
+  opacity: 0.8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+  float:left;
+ }
+ header .logo img{
+  width: 60px;
+  margin-top: 1rem;
+  height: 50px;
+}
+header .logo a{
+  font-size: 2.5rem;
+  text-decoration: none;
+  color:var(--yellow);
+  font-weight: bolder;
+  text-align: center;
+}
+header .ongletcueil a{
+  text-decoration: none;
+  color:white;
+   font-size: 1.1rem;
+  --box-shadow:0.1rem 0.1rem rgba(0,0,0,.1);
+   border-radius: 1rem;
+   cursor: pointer;
+   padding: 0.3rem 3rem;
+   display: inline-block;
+}
+header .ongletcueil a:hover{
+  color:black;
+  background: var(--yellow);
+}
+
+header .icons a{
+  float: left;
+  font-size: 1.4rem;
+  color:#ffd234;
+  margin-left: 1.4rem;
+  text-align: center;
+  cursor: pointer;
+   } 
+header .icons a:hover{
+    color: #fff;
+    transform: rotate(360deg);
+  }
+
+/*fin du header*/
+
+
+/*Debut de QSN*/
+section.QSN{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  
+}
+.QSN img{
+  width: 100%;
+  height: 705px;
+}
+.QSN .text{
+  position: absolute;
+  text-align: center;
+  padding: 17rem;
+  margin-left: 6rem;
+  
+  
+}
+.QSN .text h1{
+  font-size: 4rem;
+  text-align: center;
+}
+.QSN .text h1:hover{
+  text-decoration: underline;
+  color:white;
+  cursor: pointer;
+}
+.QSN .text p{
+  font-size: 1.5rem;
+  font-style: oblique;
+  text-align: center;
+}
+/*fin du QSN*/
+
+/*debut de History*/
+section.history{
+  background-color: #ffd234;
+}
+.history h1{
+  font-size: 2rem;
+  text-align: center;
+}
+img.alignleft{
+  margin: 0 15px 0 0;
+  float: left;
+}
+
+
+
+
+
+
+
+  /*debut footer*/
+ .footer{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+  }
+  .footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    text-align: center;
+  }
+  .footer .box-container .box H3{
+    padding:.3rem 0;
+    font-size: 1rem;
+    color: var(--yellow);
+  }
+  .footer .box-container .box a{
+    display: block;
+    padding:.5rem 0;
+    font-size: 0.9rem;
+    color: white;
+    text-decoration: none;
+  }
+  .footer .box-container .box a:hover{
+      color: var(--yellow);
+      text-decoration: none;
+  }
+  .footer .credit{
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    font-size:1rem;
+    color: white;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .footer .credit span{
+    color: var(--yellow);
+  }
+  /*fin footer*/

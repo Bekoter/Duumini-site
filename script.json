@@ -1,0 +1,10 @@
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            let typed = new typed('.auto-typing',{
+                Strings:['Attiéké','Alloco','Placali'],
+                typespeed:100,
+                backspeed:100,
+                loop:true,
+                fadeout:true,
+                fadeoutclass:'typed-fade-out',
+                fadeoutdelay:500
+            }
